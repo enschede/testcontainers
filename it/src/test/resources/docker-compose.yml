@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  module1:
+    image: module1:0.0.1-SNAPSHOT
+    ports:
+    - 8080:8080
+    networks:
+      monitoring:
+        aliases:
+          - module1
+  module2:
+    image: module2:0.0.1-SNAPSHOT
+    ports:
+    - 8081:8081
+    networks:
+      monitoring:
+        aliases:
+          - module2
+
+networks:
+  monitoring:

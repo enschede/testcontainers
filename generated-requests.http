@@ -1,0 +1,7 @@
+GET http://localhost:8080/marc
+
+<> 2021-06-15T172441.200.txt
+
+###
+GET http://localhost:8081/greeting/marc
+
