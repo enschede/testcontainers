@@ -42,7 +42,7 @@ public class ContainerIntegrationTest {
                 new RestTemplate().getForEntity(String.format("http://localhost:%d/marc", servicePortModule1), String.class);
 
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(responseEntity.getBody()).isEqualTo("Hello Hello marc");
+        assertThat(responseEntity.getBody()).isEqualTo("Bye Bye marc");
     }
 
     @Test
@@ -51,7 +51,7 @@ public class ContainerIntegrationTest {
                 new RestTemplate().getForEntity(String.format("http://localhost:%d/marc", servicePortModule1), String.class);
 
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
-        assertThat(responseEntity.getBody()).isEqualTo("Hello Hello marc");
+        assertThat(responseEntity.getBody()).isEqualTo("Bye Bye marc");
     }
 
 }
