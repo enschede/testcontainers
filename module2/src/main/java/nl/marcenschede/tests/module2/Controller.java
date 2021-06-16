@@ -10,6 +10,6 @@ public class Controller {
 
     @GetMapping(value = "/greeting/{name}")
     public Mono<String> sayHello(@PathVariable String name) {
-        return Mono.just( "Hello " + name);
+        return Mono.just( "Bye " + name);
     }
 }
